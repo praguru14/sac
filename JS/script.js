@@ -1,6 +1,8 @@
 console.log("hello");
-
-function findavg() {
+Number.prototype.round = function(places) {
+  return +(Math.round(this + "e+" + places)  + "e-" + places);
+}
+ findavg=()=> {
 
     //TODO: Refactor this let 
     let n1 = Number(document.getElementById("num1").value);
@@ -24,12 +26,14 @@ function findavg() {
     let n19 = Number(document.getElementById("num19").value);
     let n20 = Number(document.getElementById("num20").value);
 
-
-
-
-    // let avg = parseFloat((nenum1 + nenum2) / 2);
-
-    // let anz = parseInt(avg);
-
-    // document.getElementById("Youranswer").innerHTML = "Average is : " + anz;
+    let totalAmount = (n1+n3+n5+n7+n9+n11+n13+n15+n17+n19);
+    if(totalAmount>0){
+    let totalAP = (n1*n2+ n3*n4+ n5*n6+ n7*n8+ n9*n10+ n11*n12+ n13*n14+ n15*n16+ n17*n18+ n19*n20);
+    let avg = totalAP/totalAmount;
+    
+    document.getElementById("avg").innerHTML = "You bought a total of " + totalAmount + " shares " +"<br>"+ "Your average price is " + avg.round(4)+"<br>"+ "Your total money spent is " + totalAP;
+    }
+    else{
+        document.getElementById("avg").innerHTML = "You havent entered any value,kindly enter and then try again";
+    }
 }
