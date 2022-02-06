@@ -26,10 +26,6 @@ body{
 #convert:focus{
     border: 3px solid #555;
 }
-/* #convert{
-  border-radius: 1px;
-    border: 1px solid black;
-    padding: 20px; 
-    width: 10px;
-    height: 10px;  
+/* #convertbtn{
+    margin-top : 25px;
 } */

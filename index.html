@@ -20,48 +20,51 @@
             <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Amount</th>
         </tr>
         <tr>
-            <th>1 &emsp;  <input type="text" id="num1"></th>
-            <th><input type="text" id="num2"></th>
+            <th>1 &emsp;  <input type="number" id="num1"></th>
+            <th><input type="number" id="num2"></th>
         </tr>
         <tr>
-            <th>2 &emsp;  <input type="text" id="num3"></th>
-            <th><input type="text" id="num4"></th>
+            <th>2 &emsp;  <input type="number" id="num3"></th>
+            <th><input type="number" id="num4"></th>
         </tr>
         <tr>
-            <th>3 &emsp;  <input type="text" id="num5"></th>
-            <th><input type="text" id="num6"></th>
+            <th>3 &emsp;  <input type="number" id="num5"></th>
+            <th><input type="number" id="num6"></th>
         </tr>
         <tr>
-            <th>4 &emsp;  <input type="text" id="num7"></th>
-            <th><input type="text" id="num8"></th>
+            <th>4 &emsp;  <input type="number" id="num7"></th>
+            <th><input type="number" id="num8"></th>
         </tr>
         <tr>
-            <th>5 &emsp;  <input type="text" id="num9"></th>
-            <th><input type="text" id="num10"></th>
+            <th>5 &emsp;  <input type="number" id="num9"></th>
+            <th><input type="number" id="num10"></th>
         </tr>
         <tr>
-            <th>6 &emsp;  <input type="text" id="num11"></th>
-            <th><input type="text" id="num12"></th>
+            <th>6 &emsp;  <input type="number" id="num11"></th>
+            <th><input type="number" id="num12"></th>
         </tr>
         <tr>
             <th>7 &emsp;  <input type="text" id="num13"></th>
             <th><input type="text" id="num14"></th>
         </tr>
         <tr>
-            <th>8 &emsp;  <input type="text" id="num15"></th>
-            <th><input type="text" id="num16"></th>
+            <th>8 &emsp;  <input type="number" id="num15"></th>
+            <th><input type="number" id="num16"></th>
         </tr>
         <tr>
-            <th>9 &emsp; <input type="text" id="num17"></th>
-            <th><input type="text" id="num18"></th>
+            <th>9 &emsp; <input type="number" id="num17"></th>
+            <th><input type="number" id="num18"></th>
         </tr>
         <tr>
-            <th>10&emsp;<input type="text" id="num19"></th>
-            <th><input type="text" id="num20"></th>
+            <th>10&emsp;<input type="number" id="num19"></th>
+            <th><input type="number" id="num20"></th>
         </tr>
     </table>
     <br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     <input type="submit" name="submit" id="submit" onclick="findavg()">
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Reset" onclick=reset()>
     <br><br>
     <p id="avg"></p>
     
@@ -72,15 +75,15 @@
 <label for="currency">Choose a currency:</label>
 
 <select name="currency" id="sign">
-  <option value="rupees">&#8377;</option>
   <option value="dollar">$</option>
-  <option value="pound">&#163;</option>
+  <option value="rupees">&#8377;</option>
+  <!-- <option value="pound">&#163;</option> -->
 </select>
 <br><br>
 <div>
-    Change Dollar to INR : $
+    Change dollar to INR : $
     <input type="number" name="" id="convert" style="width:20%">
-    &ensp;<input type="submit" name="" id="convertbtn" onclick="convert()">
+    &ensp;<input type="submit" name="" id="convertbtn" onclick="convertUsdToInr()">
     <p id="conv"></p>
 </div>
 </div>
