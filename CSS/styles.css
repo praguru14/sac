@@ -1,3 +1,35 @@
-body {
-    background-color: whitesmoke;
+body{
+	color:#fff;
+	font-size:100pt;
 }
+.section1{
+	width:60%;
+	float:left;
+	height:100vh;
+	/* border-right: 1px dotted grey;  */
+    box-sizing: border-box;
+    margin:0;
+    padding:20px;	
+}
+.section2{
+	width:40%;
+	float:left;
+	height:100vh;
+	margin:0;
+	padding:40px;
+    box-sizing: border-box;
+}
+
+#convert{
+    border-radius: 10px;
+}
+#convert:focus{
+    border: 3px solid #555;
+}
+/* #convert{
+  border-radius: 1px;
+    border: 1px solid black;
+    padding: 20px; 
+    width: 10px;
+    height: 10px;  
+} */

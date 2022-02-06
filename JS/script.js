@@ -1,7 +1,40 @@
-console.log("hello");
+// include api for currency change
+const api = "https://api.exchangerate-api.com/v4/latest/USD";
 Number.prototype.round = function(places) {
   return +(Math.round(this + "e+" + places)  + "e-" + places);
 }
+
+exchange= ()=>{
+   fetch(api)
+    .then(response => response.json())
+    .then(data => {
+        const rate = data.rates.INR;
+        const amount = document.querySelector(".amount").value;
+        const result = amount * rate;
+        document.querySelector(".result").value = result;
+    }
+    )
+
+
+}
+
+convert=()=>{
+    let converter = document.getElementById("convert").value;
+    
+    fetch(api)
+    .then(response => response.json())
+    .then(data => {
+        const rate = data.rates.INR;
+        const amount = converter;
+        const result = amount * rate;
+        document.getElementById("conv").innerHTML = result.round(4);
+    }
+    )
+
+    
+}
+
+
  findavg=()=> {
 
     //TODO: Refactor this let 
@@ -25,13 +58,25 @@ Number.prototype.round = function(places) {
     let n18 = Number(document.getElementById("num18").value);
     let n19 = Number(document.getElementById("num19").value);
     let n20 = Number(document.getElementById("num20").value);
+    let sign = document.getElementById("sign").value;
+    console.log(sign);
+    let symbol = "";
+    if(sign === "rupees"){
+        symbol = "₹";
+    }
+    else if(sign === "dollar"){
+        symbol = "$";
+    }
+    else{
+        symbol = "€";
+       }
 
     let totalAmount = (n1+n3+n5+n7+n9+n11+n13+n15+n17+n19);
     if(totalAmount>0){
     let totalAP = (n1*n2+ n3*n4+ n5*n6+ n7*n8+ n9*n10+ n11*n12+ n13*n14+ n15*n16+ n17*n18+ n19*n20);
     let avg = totalAP/totalAmount;
     
-    document.getElementById("avg").innerHTML = "You bought a total of " + totalAmount + " shares " +"<br>"+ "Your average price is " + avg.round(4)+"<br>"+ "Your total money spent is " + totalAP;
+    document.getElementById("avg").innerHTML = "You bought a total of " + totalAmount + " shares " +"<br>"+ "Your average price is " + symbol + avg.round(4)+"<br>"+ "Your total money spent is " + symbol + totalAP.round(3);
     }
     else{
         document.getElementById("avg").innerHTML = "You havent entered any value,kindly enter and then try again";
