@@ -2,6 +2,9 @@ body{
 	color:#fff;
 	font-size:100pt;
 }
+.h1{
+    padding: 12px;
+}
 .section1{
 	width:60%;
 	float:left;
