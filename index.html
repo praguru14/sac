@@ -86,6 +86,27 @@
     &ensp;<input type="submit" name="" id="convertbtn" onclick="convertUsdToInr()">
     <p id="conv"></p>
 </div>
+<div class="profit">
+    
+    <br>
+    <!-- //&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp; -->
+<h3>Profit calculator</h3>
+<ul>
+    <li>Calculate net profit for current data: </li>
+<input type="text" id="inputVal" placeholder="Enter current amount" style="width: 50%;">
+<input type="button" value="Submit" onclick=profit()>
+<p id="profit"></p>
+<li>Calculate net profit: </li>
+<input type="text" id="inputVal1" placeholder="Enter invested amount" style="width: 50%;">
+<br>
+<input type="text" id="inputVal2" placeholder="Enter current amount" style="width: 50%;">
+
+
+<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="button" value="Submit" onclick=netProf()>
+<p id="netProf"></p>
+</ul>
+
+</div>
 </div>
     <script src="JS/script.js"></script>
 </body>
