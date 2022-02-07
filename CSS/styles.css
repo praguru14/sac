@@ -1,3 +1,47 @@
-body {
-    background-color: whitesmoke;
+html{
+    background-color: #DDDDDD;
+}
+.h1{
+    padding: 12px;
+     background-color: #DDDDDD;
+}
+.section1{
+	width:60%;
+	float:left;
+	height:100vh;
+	/* border-right: 1px dotted grey;  */
+    box-sizing: border-box;
+    margin:0;
+    padding:20px;	
+}
+.section2{
+	width:40%;
+	float:left;
+	height:100vh;
+	margin:0;
+	padding:40px;
+    box-sizing: border-box;
+}
+
+#convert{
+    border-radius: 10px;
+}
+#convert:focus{
+    border: 3px solid #555;
+}
+/* #convertbtn{
+    margin-top : 25px;
+} */
+
+.button{
+  background-color: #AAAAAA;
+  color: black;
+  text-decoration:double;
+  display: inline-block;
+}
+.button2{
+  background-color: #dddddd;
+  color: black;
+  text-decoration:double;
+  display: inline-block;
 }
