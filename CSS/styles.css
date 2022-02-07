@@ -1,6 +1,7 @@
 body{
 	color:#fff;
 	font-size:100pt;
+    font-family: 'Open Sans', sans-serif;
 }
 .h1{
     padding: 12px;
@@ -33,6 +34,15 @@ body{
     margin-top : 25px;
 } */
 
-#inputVal1{
-  
+.button{
+  background-color: #4CAF50;
+  color: black;
+  text-decoration:double;
+  display: inline-block;
+}
+.button2{
+  background-color: rgb(236, 204, 20);
+  color: black;
+  text-decoration:double;
+  display: inline-block;
 }
