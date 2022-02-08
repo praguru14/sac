@@ -1,9 +1,11 @@
 html{
-    background-color: #DDDDDD;
+    background-color: #66bfbf;
+    opacity: 1;
 }
 .h1{
     padding: 12px;
-     background-color: #DDDDDD;
+    background-color:#a6e7e7 ;
+    color: #435b63;
 }
 .section1{
 	width:60%;
@@ -34,14 +36,26 @@ html{
 } */
 
 .button{
-  background-color: #AAAAAA;
-  color: black;
+  background-color:white;
+  color:black;
   text-decoration:double;
-  display: inline-block;
+  display:inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
+.button:hover {
+    background-color: #0c4154;
+    color: white;
+  }
 .button2{
-  background-color: #dddddd;
+  background-color:white;
   color: black;
   text-decoration:double;
   display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
+.button2:hover {
+    background-color: #0c4154;
+    color: white;
+  }
