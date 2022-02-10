@@ -68,10 +68,7 @@ html {
 a:link{
     color: black;
 }
-.contact{
-  /* add some css for styling it black*/
-  
-}
+
 a:hover{
   /* add some css for hover case*/
   background-color: #d9b3ff; 
