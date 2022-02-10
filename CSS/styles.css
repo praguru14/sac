@@ -65,12 +65,21 @@ html {
   background-color: #0c4154;
   color: white;
 }
+a:link{
+    color: black;
+}
 .contact{
   /* add some css for styling it black*/
+  
 }
-.contact:hover{
+a:hover{
   /* add some css for hover case*/
+  background-color: #d9b3ff; 
 }
-.contact:active{
+a:active{
   /* add some css for active case*/
+    background-color: #80ffaa;
+}
+a:hover,a:active{
+    font-style: oblique;
 }
