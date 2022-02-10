@@ -14,15 +14,15 @@
 
 <body >
     
-    <h1 style="text-align: center"; class="h1">Stock Average calculator</h1>
+    <h1 style="text-align: center"; class="h1"><strong> Average calculator </strong></h1>
     <div class="section1">
    <div>
         
     <br>
     <table>
         <tr>
-            <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Number</th>
-            <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Amount</th>
+            <th style="font-family:courier;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Number</th>
+            <th style="font-family:courier;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Amount</th>
         </tr>
         <tr>
             <th title="Enter number"> 1 &emsp;  <input type="number" id="num1"></th>
@@ -74,6 +74,7 @@
     <p id="avg"></p>
     
    </div>
+   <p style="color: #cfc7c6;">&copypg <sub>2022</sub></p>
 
 </div>
 <div class="section2">
@@ -88,7 +89,7 @@
 <br><br>
 <div>
     Change dollar to INR : $
-    <input type="number" name="" id="convert" style="width:20%">
+    <input type="number" name="" id="convert" style="width:20%" title="Enter currency">
     &ensp;<input type="submit" class="button" name="" id="convertbtn" onclick="convertUsdToInr()">
     <p id="conv"></p>
 </div>
@@ -99,25 +100,28 @@
 <h3>Profit calculator</h3>
 <ul>
     <li>Calculate net profit for current data: </li>
-<input type="text" id="inputVal" placeholder="Enter current amount" style="width: 50%;">
+<input type="text" id="inputVal" placeholder="Enter current amount" style="width: 50%;" title="Enter current amount">
 <input type="button" value="Submit" class="button" onclick=profit()>
 <p id="profit"></p>
 <li>Calculate net profit: </li>
-<input type="text" id="inputVal1" placeholder="Enter invested amount" style="width: 50%;">
+<input type="text" id="inputVal1" placeholder="Enter invested amount" style="width: 50%;" title="Enter invested amount">
 <br>
-<input type="text" id="inputVal2" placeholder="Enter current amount" style="width: 50%;">
+<input type="text" id="inputVal2" placeholder="Enter current amount" style="width: 50%;" title="Enter current amount">
 
 
-<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="button" class="button" value="Submit" onclick=netProf()>
+<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<br><input type="button" class="button" value="Submit" onclick=netProf()>
 <p id="netProf"></p>
 </ul>
+<p style="text-align:end;"><a href="https: www.gmail.com/">Contact us!</a></p>
 
 </div>
 </div>
     <script src="JS/script.js"></script>
 </body>
 
+
 </html>
+
 
 <!-- <br><br>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; -->
