@@ -11,7 +11,7 @@ html {
   background-color: #a6e7e7;
   color: #435b63;
   font-family: courier;
-  border: 3px solid DodgerBlue;
+  /* border: 3px solid DodgerBlue; */
 }
 .section1 {
   width: 60%;
@@ -64,4 +64,13 @@ html {
 .button2:hover {
   background-color: #0c4154;
   color: white;
+}
+.contact{
+  /* add some css for styling it black*/
+}
+.contact:hover{
+  /* add some css for hover case*/
+}
+.contact:active{
+  /* add some css for active case*/
 }
