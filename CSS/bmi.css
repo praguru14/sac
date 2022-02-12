@@ -63,8 +63,17 @@ body {
     background-color: white;
     border-radius: 10px;
 }
-
+   .title{
+        text-align: center;
+        width: 100%;
+    }
 @media (max-width: 800px) {
+    .title{
+        display: none;
+    }
+    .title .bar{
+        background-color: white;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
