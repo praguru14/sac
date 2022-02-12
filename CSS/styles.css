@@ -9,12 +9,12 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 .navbar
 {
-  color: black;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   background-color: #00DBDE;
-background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
 }
 .topnav {
-  background-color: #333;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   overflow: hidden;
 }
 
@@ -22,16 +22,19 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #1a1818;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  
 }
 .topnavLeft a {
+ 
   float: right;
   display: inline-block;
-  color: #f2f2f2;
+  color: #030303;
   text-align: center;
   margin-right: 100px;
   padding: 14px 16px;
@@ -40,14 +43,14 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #04AA6D;
-  color: white;
+  color: rgb(31, 29, 29);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
