@@ -7,85 +7,54 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 ;
 
 }
-.h1 {
-  padding: 12px;
-  background-color: #FFDEE9;
-background-image: linear-gradient(233deg, #FFDEE9 0%, #B5FFFC 100%);
-
-  color: #435b63;
-  font-family: courier;
-  /* border: 3px solid DodgerBlue; */
-}
-.section1 {
-  width: 60%;
-  float: left;
-  height: 100vh;
-  /* border-right: 1px dotted grey;  */
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-}
-.section2 {
-  width: 40%;
-  float: left;
-  height: 100vh;
-  margin: 0;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
-#convert {
-  border-radius: 10px;
-}
-#convert:focus {
-  border: 3px solid #555;
-}
-/* #convertbtn{
-    margin-top : 25px;
-} */
-
-.button {
-  background-color: white;
-  color: black;
-  text-decoration: double;
-  display: inline-block;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #0c4154;
-  color: white;
-}
-.button2 {
-  background-color: white;
-  color: black;
-  text-decoration: double;
-  display: inline-block;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button2:hover {
-  background-color: #0c4154;
-  color: white;
-}
-a:link{
-    color: black;
-}
-
-a:hover{
-  /* add some css for hover case*/
-  background-color: #d9b3ff; 
-}
-a:active{
-  /* add some css for active case*/
-    background-color: #80ffaa;
-}
-a:hover,a:active{
-    font-style: oblique;
-}
 .navbar
 {
   color: black;
   background-color: #00DBDE;
 background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnavLeft a {
+  float: right;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 100px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.disabled{
+  pointer-events: none;
 }
