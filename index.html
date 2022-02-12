@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>
-        Average calculator
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-<body >
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body>
+    <a href="HTML/sac.html"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">DEV</a>
+          <a class="navbar-brand" href="HTML/sac.html">Stock average calculator</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               
             <ul class="navbar-nav">
-              <li class="nav-item" >
-                <a class="nav-link active" aria-current="page" href="#">SAC</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SGPA</a>
               </li>
@@ -35,126 +27,5 @@
           </div>
         </div>
       </nav>
-    <h1 style="text-align: center"; class="h1"><strong>Stock Average Calculator </strong></h1>
-    <div class="section1">
-   <div>
-        
-    <br>
-    <table>
-        <tr>
-            <th style="font-family:courier;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Number</th>
-            <th style="font-family:courier;">&emsp;&emsp;&emsp;&emsp;Amount</th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 1 &emsp;  <input type="number" id="num1"></th>
-            <th title="Enter amount"><input type="number" id="num2"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 2 &emsp;  <input type="number" id="num3"></th>
-            <th title="Enter amount"><input type="number" id="num4"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 3 &emsp;  <input type="number" id="num5"></th>
-            <th title="Enter amount"><input type="number" id="num6"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 4 &emsp;  <input type="number" id="num7"></th>
-            <th title="Enter amount"><input type="number" id="num8"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 5 &emsp;  <input type="number" id="num9"></th>
-            <th title="Enter amount"><input type="number" id="num10"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 6 &emsp;  <input type="number" id="num11"></th>
-            <th title="Enter amount"><input type="number" id="num12"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 7 &emsp;  <input type="number" id="num13"></th>
-            <th title="Enter amount"><input type="number" id="num14"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 8 &emsp;  <input type="number" id="num15"></th>
-            <th title="Enter amount"><input type="number" id="num16"></th>
-        </tr>
-        <tr>
-            <th title="Enter number"> 9 &emsp; <input type="number" id="num17"></th>
-            <th title="Enter amount"><input type="number" id="num18"></th>
-        </tr>
-        <tr>
-            <th title="Enter number">10&emsp;<input type="number" id="num19"></th>
-            <th title="Enter amount"><input type="number" id="num20"></th>
-        </tr>
-    </table>
-    <br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="submit" name="submit" id="submit" onclick="findavg()" class="button">
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="submit" value="Reset" class="button2" onclick=reset()>
-    <br><br>
-    <p id="avg"></p>
-    
-   </div>
-   
-   <div style="color:  black;">
-    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&copy;DEV <sub>2022</sub></p>
-    <p style="color: #1f1c1b;" class="contact">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
-        &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="mailto:bhattsachin993@gmail.com">Contact DEV!</a></p>
-</div>
-    
-
-</div>
-<div class="section2">
-
-<label for="currency">Choose a currency:</label>
-
-<select name="currency" id="sign">
-  <option value="dollar">$</option>
-  <option value="rupees">&#8377;</option>
-  <!-- <option value="pound">&#163;</option> -->
-</select>
-<br><br>
-<div>
-    Change dollar to INR : $
-    <input type="number" name="" id="convert" style="width:20%" title="Enter currency">
-    &ensp;<input type="submit" class="button" name="" id="convertbtn" onclick="convertUsdToInr()">
-    <p id="conv"></p>
-</div>
-<div class="profit">
-    
-    <br>
-    <!-- //&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp; -->
-<h3>Profit calculator</h3>
-<ul>
-    <li>Calculate net profit for current data: </li>
-<input type="text" id="inputVal" placeholder="Enter current amount" style="width: 50%;" title="Enter current amount">
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-<input type="button" value="Submit" class="button" onclick=profit()>
-<p id="profit"></p>
-<li>Calculate net profit: </li>
-<input type="text" id="inputVal1" placeholder="Enter invested amount" style="width: 50%;" title="Enter invested amount">
-<br>
-<input type="text" id="inputVal2" placeholder="Enter current amount" style="width: 50%;" title="Enter current amount">
-
-
-<br>&emsp;&emsp;&emsp;&emsp;&nbsp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="button" class="button" value="Submit" onclick=netProf()>
-<p id="netProf"></p>
-</ul>
-
-
-</div>
-</div>
-    <script src="JS/script.js"></script>
 </body>
-
-
 </html>
-
-
-<!-- <br><br>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; -->
