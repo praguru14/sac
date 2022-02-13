@@ -11,7 +11,6 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   padding: 12px;
   background-color: #FFDEE9;
 background-image: linear-gradient(233deg, #FFDEE9 0%, #B5FFFC 100%);
-
   color: #435b63;
   font-family: courier;
   /* border: 3px solid DodgerBlue; */
@@ -70,9 +69,6 @@ background-image: linear-gradient(233deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 a:link{
     color: black;
-}:hover{
-  /* add some css for hover case*/
-  /* background-color: #d9b3ff;  */
 }
 a:active{
   /* add some css for active case*/
@@ -82,61 +78,128 @@ a:active{
 a:hover,a:active{
     font-style: oblique;
 }
-.navbar
-{
-  color: black;
-  background-color: #00DBDE;
-background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-}
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnavLeft a {
-  float: right;
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  margin-right: 100px;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-.disabled{
-  pointer-events: none;
-}
 @media screen and (min-width: 780px) {
 .topnav .topnavLeft a {
 margin: auto;
 width: 90%;
 }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbara {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-buttons {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-buttons .bars {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.title{
+        text-align: center;
+        width: 100%;
+}
+.short-text { display: none; }
+
+
+@media (max-width: 800px) {
+        .short-text { 
+        display: block;
+        width: 100%; 
+       font-size: 2rem;
+        float: center;
+    }
+    .full-text { display: none; width: 100%; font-size: 2rem; }
+    .brand-title{display: none;width: 100%;}
+    .title{
+        display: none;
+    }
+    .title .bars{
+        background-color: white;
+    }
+    .navbara {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-buttons {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }

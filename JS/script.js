@@ -124,3 +124,11 @@ netProf=()=>{
     }
     document.getElementById("netProf").innerHTML = "Your net profit is ₹" +net ;
 }
+//TODO: Button not working when you click on it(after resizing)
+const toggleButton = document.getElementsByClassName('toggle-buttons')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+  console.log("hello");
+})
