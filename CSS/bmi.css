@@ -63,11 +63,22 @@ body {
     background-color: white;
     border-radius: 10px;
 }
-   .title{
+.title{
         text-align: center;
         width: 100%;
-    }
+}
+.short-text { display: none; }
+
+
 @media (max-width: 800px) {
+        .short-text { 
+        display: block;
+        width: 100%; 
+       font-size: 2.5rem;
+        float: center;
+    }
+    .full-text { display: none; width: 100%; font-size: 2rem; }
+    .brand-title{display: none;width: 100%;}
     .title{
         display: none;
     }
